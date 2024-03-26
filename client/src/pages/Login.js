@@ -57,11 +57,12 @@ const Login = () => {
         </form>
 
         <br />
+        <div className = "orFormat">
         <p>OR</p>
         <br />
+        </div>
 
         <NavLink to="/signup"><div className='signup'>Sign Up</div></NavLink>
-
 
         
       </div>

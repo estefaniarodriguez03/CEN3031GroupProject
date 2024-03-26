@@ -2,6 +2,7 @@ import {useEffect, useState} from 'react'
 import {NavLink} from 'react-router-dom'
 //import Record from '../components/Record'
 import dogWalker from './dogwalker.svg'
+import girlAndDog from './girlanddog.jpg'
 
 /*const Pet = (props) => (
     
@@ -13,9 +14,12 @@ export default function Homepage() {
       <div className="main">
         <div className="main__container">
           <div className="main__content">
-            <h1>Welcome to Helping Hands Pet Rescue!</h1>
             <div className="main_img--container">
-              <img src={dogWalker} alt="pic" id="main__img" />
+              <img src={girlAndDog} alt="pic" id="main__img" />
+              <div class="overlay__text circle__bg circle">
+                Welcome to 
+                Helping Hands
+                Pet Rescue!</div>
             </div>
             <a href="/" className="main__btn">Events</a>
           </div>

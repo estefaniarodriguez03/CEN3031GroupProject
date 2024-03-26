@@ -20,31 +20,6 @@ a:visited {
     text-decoration: none;
     
 }
-.name {
-    font-weight: 700;
-    font-size: 2rem;
-    color: rgb(121, 58, 85);
-}
-.donate{
-    color: rgb(252, 250, 249);
-    font-weight: 500;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    width: 5%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #FFBA52FF;
-    margin: 10px;
-    
-}
-.donate:hover {
-    background: #FDB0C0;
-    transition: all 0.3s ease;
-}
 
 .amount{
     padding: 20px;
@@ -91,7 +66,6 @@ code {
 #navbar__logo {
     background-color: #FFBA52FF;
     background-image: linear-gradient(to top, #FFBA52FF 0%, #fff 100%);
-    
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -206,7 +180,7 @@ code {
         transition: all 0.5s ease;
         height: 50vh;
         z-index: -1;
-        background: #E683A9FF; 
+        background: rgb(230, 131, 169); 
     }
 
     .navbar__menu.actve {
@@ -285,20 +259,114 @@ code {
 /* Homepage */
 .main {
     background-color: #fff;
-
 }
 
+.main__container {
+    display: grid;
+}
+
+.main__content h1 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFBA52FF;
+}
+
+
+#main__img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.overlay__text {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    display: flex;
+    color:#fff;
+    font-size: 1.3rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.circle__bg {
+    background: transparent;
+    border: 5px solid #FFBA52FF;
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(230, 131, 169, 0.6);
+}
+
+.petHeader {
+    text-align: center;
+    font-weight: 600;
+}
 .petListText{
-    margin-left: 20px;
+    position: relative;
+    margin-left: 5px;
     margin-top: 5px;
 }
 
-.dogPix{
-    margin-top:5px;
-    margin-bottom:5px;
-
-
+.petFormat {
+    position: relative;
+    padding: 10px 20px;
 }
+
+.name {
+    font-weight: 700;
+    font-size: 2rem;
+    color: rgb(121, 58, 85);
+    left: 30px;
+}
+
+.donate{
+    color: rgb(252, 250, 249);
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    width: 5%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #FFBA52FF;
+    margin: 10px;
+}
+.donate:hover {
+    background: rgb(121, 58, 85);
+    transition: all 0.3s ease;
+}
+
+
+.square {
+    position: absolute;
+    height: 365px;
+    width: 365px;
+    background-color: #FDB0C0;
+}
+
+
+.dogPix{
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    left: 60px;
+}
+
 .login{
     text-align:center;
     font-size: 150%;
@@ -314,9 +382,30 @@ code {
     text-align:center;
 
 }
-.signup{
-    color:black;
+.signup {
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background: #FDB0C0;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
 }
+
+.orFormat {
+    text-align: center;
+    font-weight: 600;
+}
+
+.signup:hover {
+    background: #FFBA52FF;
+    transition: all 0.3s ease;
+}
+
 
 
 
