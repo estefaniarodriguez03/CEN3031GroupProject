@@ -1,3 +1,15 @@
-This is the README for our group project.
+to start website:
 
-Expansion on this file will come later on.
+open a terminal!
+commands:
+
+cd server
+
+node --env-file=config.env server
+
+open a second terminal!
+commands:
+
+cd client
+
+npm start
