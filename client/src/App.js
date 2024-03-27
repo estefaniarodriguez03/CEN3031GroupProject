@@ -1,5 +1,6 @@
 import Homepage from "./pages/Homepage.js";
 import DonationForm from "./pages/DonationForm.js";
+import PawfectMatch from "./pages/PawfectMatch.js";
 import AdoptableDogs from "./pages/AdoptableDogs";
 import Navbar from "./components/Navbar.js";
 import Login from "./pages/Login.js";
@@ -14,6 +15,7 @@ function App() {
       <Routes>
           <Route exact path="/" element = {<Homepage />}> </Route>
           <Route exact path="/donate" element = {<DonationForm />}> </Route>
+          <Route exact path="/pawfectmatch" element = {<PawfectMatch />}> </Route>
           <Route exact path="/adoptabledogs" element = {<AdoptableDogs />}> </Route>
           <Route exact path="/signin" element = {<Login />}> </Route>
           <Route exact path="/signup" element = {<Signup />}> </Route>

@@ -1,12 +1,8 @@
 
 @import url(https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap);
 
-
-
 body{
   margin: 0px;
-  
-  
   color: black;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -31,6 +27,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Website Text */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -38,7 +36,7 @@ code {
     font-family: 'Merriweather', sans-serif; /* import from google fonts */
 }
 
-/* #FCEFb4,#77C3EC */
+/* Navigation Bar */
 .navbar {
     background: #E683A9FF;
     height: 90px;
@@ -62,7 +60,7 @@ code {
     padding: 0 50px;
 }
 
-/* "Helping Hands" */
+/* Navbar: "Helping Hands" */
 #navbar__logo {
     background-color: #FFBA52FF;
     background-image: linear-gradient(to top, #FFBA52FF 0%, #fff 100%);
@@ -93,11 +91,12 @@ code {
     font-size: 2rem;
 }
 
-/* logo */
+/* Navbar: Paw Logo */
 .fa-gem {
     margin-right: 0.5rem;
 }
 
+/* Navbar: Menu */
 .navbar__menu {
     display: flex;
     align-items: center;
@@ -119,6 +118,7 @@ code {
     height: 100%;
 }
 
+/* Navbar: Buttons */
 .navbar__btn {
     display: flex;
     justify-content: center;
@@ -127,6 +127,7 @@ code {
     width: 100%;
 }
 
+/* Navbar: "Sign In" button */
 .button {
     display: flex;
     justify-content: center;
@@ -147,13 +148,12 @@ code {
     transition: all 0.3s ease;
 }
 
-
 .navbar__links:hover {
     color: #FFBA52FF;
     transition: all 0.3s ease;
 }
 
-/* comment all this out probs */
+/* Extra/for minimizing screen */
 @media screen and (max-width: 960px) {
     .navbar__container {
         display: flex;
@@ -265,15 +265,7 @@ code {
     display: grid;
 }
 
-.main__content h1 {
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #FFBA52FF;
-}
-
-
+/* Girl with dog */
 #main__img {
     display: block;
     height: 100%;
@@ -310,6 +302,8 @@ code {
     background-color: rgba(230, 131, 169, 0.6);
 }
 
+
+/* Adoptable Dogs Page */
 .petHeader {
     text-align: center;
     font-weight: 600;
@@ -332,6 +326,7 @@ code {
     left: 30px;
 }
 
+/* Donate button */
 .donate{
     color: rgb(252, 250, 249);
     font-weight: 500;
@@ -351,7 +346,6 @@ code {
     transition: all 0.3s ease;
 }
 
-
 .square {
     position: absolute;
     height: 365px;
@@ -359,12 +353,18 @@ code {
     background-color: #FDB0C0;
 }
 
-
+/* Individual dog pics */
 .dogPix{
     position: relative;
     margin-top: 5px;
     margin-bottom: 5px;
     left: 60px;
+}
+
+
+/* "Sign In" Page */
+.loginPage {
+    margin: 70px;
 }
 
 .login{
@@ -373,15 +373,16 @@ code {
     margin:5px;
     
 }
-.donationText{
+.loginText{
     text-align:center;
     font-size: 2rem;
     font-weight: 600;
 }
 .submitButton{
     text-align:center;
-
+    margin: 15px;
 }
+
 .signup {
     color: #fff;
     font-weight: 500;
@@ -395,15 +396,39 @@ code {
     margin: auto;
     text-align: center;
 }
+.signup:hover {
+    background: #FFBA52FF;
+    transition: all 0.3s ease;
+}
 
 .orFormat {
     text-align: center;
     font-weight: 600;
 }
 
-.signup:hover {
+/* "Sign Up" page */
+.signin {
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 4px;
     background: #FFBA52FF;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+.signin:hover {
+    background: #FDB0C0;
     transition: all 0.3s ease;
+}
+
+/* "Pawfect Match" Page */
+
+.welcomeText {
+    text-align: center;
 }
 
 

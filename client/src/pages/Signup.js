@@ -34,7 +34,8 @@ const Login = () => {
     }
     return(
     <div>
-        <div className = "donationText">Sign Up</div>
+        <div className = "loginPage">
+        <div className = "loginText">Sign Up</div>
         <form onSubmit={handleSubmit}>
             <div className = "login">
             <p>
@@ -55,8 +56,14 @@ const Login = () => {
             </div>
         </form>
 
-        
+        <br />
+        <div className = "orFormat">
+        <p>OR</p>
+        <br />
+        </div>
 
+        <NavLink to="/signin"><div className='signin'>Sign In</div></NavLink>
+        </div>
 
         
       </div>

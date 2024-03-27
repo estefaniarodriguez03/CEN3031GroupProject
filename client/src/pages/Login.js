@@ -35,7 +35,8 @@ const Login = () => {
     }
     return(
     <div>
-        <div className = "donationText">Sign in</div>
+        <div className = "loginPage">
+        <div className = "loginText">Sign in</div>
         <form onSubmit={handleSubmit}>
             <div className = "login">
             <p>
@@ -63,6 +64,7 @@ const Login = () => {
         </div>
 
         <NavLink to="/signup"><div className='signup'>Sign Up</div></NavLink>
+        </div>
 
         
       </div>
