@@ -428,8 +428,47 @@ code {
 /* "Pawfect Match" Page */
 
 .welcomeText {
-    text-align: center;
+    text-align:center;
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: #FFBA52FF;
+    background-image: linear-gradient(to top, #FFBA52FF 0%, #fff 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
+
+.pawfectMatch {
+    margin: 10px;
+    text-align:center;
+    background-color: rgb(202, 159, 208);
+    padding: 10px;
+}
+
+.pmDesc {
+    font-size: 13px;
+    text-align:center;
+    color: #fff;
+}
+
+/* "Donate" page */
+
+.donateText {
+    text-align:center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.donateFormat {
+    text-align:center;
+    font-size: 150%;
+    margin:15px;
+
+}
+
+
 
 
 

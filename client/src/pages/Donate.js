@@ -1,9 +1,6 @@
 import {useEffect, useState} from 'react'
 
-
-
-
-const DonationForm = () => {
+const Donate = () => {
     const[name,setName] = useState("");
     const[amount,setAmount] = useState("");
     const handleSubmit = (event) => {
@@ -12,21 +9,23 @@ const DonationForm = () => {
     }
     return(
     <div>
-        <div className = "donationText">Donate to a specific pet!</div>
+        <div className = "donateText">Donate to Helping Hands Pet Rescue!</div>
+        <div className = "donateFormat">
         <form onSubmit={handleSubmit}>
-            <label>
-            Name:
-            <input type="text" value={name} onChange={(e)=>setName(e.target.value)}/>
-            </label>
+            <p>
             <label className = "amount">
             Amount:
-            <input type="text" value={amount} onChange={(e)=>setAmount(e.target.value)}/>
+            <input type="text" value={amount} placeholder="$" onChange={(e)=>setAmount(e.target.value)}/>
             </label>
+            </p>
+            <div className='submitButton'>
             <input type="submit" value="Submit" />
+            </div>
         </form>
+        </div>
         
       </div>
       )
         
 }
-export default DonationForm;
+export default Donate;

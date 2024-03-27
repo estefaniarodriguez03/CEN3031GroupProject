@@ -3,10 +3,6 @@ import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaw } from '@fortawesome/free-solid-svg-icons'
 
-
-
-
-
 export default function Navbar() {
   const element = <FontAwesomeIcon icon={faPaw} />
   return (
@@ -23,7 +19,7 @@ export default function Navbar() {
             <a href="/" className="navbar__links"> Home </a>
           </li>
           <li className="navbar__item">
-            <a href="/tech.html" className="navbar__links"> Pawfect Match </a>
+            <a href="/pawfectmatch" className="navbar__links"> Pawfect Match </a>
           </li>
           <li className="navbar__item">
             <NavLink to= "/adoptabledogs">
@@ -31,7 +27,7 @@ export default function Navbar() {
             </NavLink>
           </li>
           <li className="navbar__item">
-            <a href="/" className="navbar__links"> Donate </a>
+            <a href="/donate" className="navbar__links"> Donate </a>
           </li>
           <li className="navbar__btn">
           <NavLink to= "/signin">

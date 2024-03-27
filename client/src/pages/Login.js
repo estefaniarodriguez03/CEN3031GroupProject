@@ -2,9 +2,6 @@ import {useEffect, useState} from 'react'
 import {useNavigate,Link,NavLink} from "react-router-dom"
 import axios from "axios"
 
-
-
-
 const Login = () => {
     const history=useNavigate();
     const[username,setUsername] = useState("");

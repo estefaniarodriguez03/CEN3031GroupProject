@@ -5,6 +5,7 @@ import AdoptableDogs from "./pages/AdoptableDogs";
 import Navbar from "./components/Navbar.js";
 import Login from "./pages/Login.js";
 import Signup from "./pages/Signup.js"
+import Donate from "./pages/Donate.js"
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 function App() {
@@ -14,11 +15,12 @@ function App() {
       <Navbar />
       <Routes>
           <Route exact path="/" element = {<Homepage />}> </Route>
-          <Route exact path="/donate" element = {<DonationForm />}> </Route>
+          <Route exact path="/donatepet" element = {<DonationForm />}> </Route>
           <Route exact path="/pawfectmatch" element = {<PawfectMatch />}> </Route>
           <Route exact path="/adoptabledogs" element = {<AdoptableDogs />}> </Route>
           <Route exact path="/signin" element = {<Login />}> </Route>
           <Route exact path="/signup" element = {<Signup />}> </Route>
+          <Route exact path="/donate" element = {<Donate />}> </Route>
           
         </Routes>
       </BrowserRouter>
