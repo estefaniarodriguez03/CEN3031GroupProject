@@ -15,7 +15,6 @@ export default function Homepage() {
         <div className="main__container">
           <div className="main__content">
             <div className="main_img--container">
-              <div className="paw"></div>
               <img src={girlAndDog} alt="pic" id="main__img" />
               <div class="overlay__text circle__bg circle">
                 Welcome to 

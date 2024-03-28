@@ -1,5 +1,6 @@
 
 @import url(https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap);
+@import 'bootstrap/dist/css/bootstrap.min.css';
 
 body{
   margin: 0px;
@@ -14,7 +15,6 @@ body{
 a:visited {
     color: white;
     text-decoration: none;
-    
 }
 
 .amount{
@@ -308,59 +308,92 @@ code {
     text-align: center;
     font-weight: 600;
 }
+/*
 .petListText{
     position: relative;
     margin-left: 5px;
     margin-top: 5px;
+    background: #FDB0C0;
+    padding: 10px 20px;
+    text-align: center;
+}
+*/
+
+.petListText {
+    text-align: center;
+    left: 0;
+    right: 0;
 }
 
-.petFormat {
+.adMain {
     position: relative;
-    padding: 10px 20px;
+    width: 400px;
+    min-height: 60px;
+    margin: auto;
+    padding-top: 15px;
 }
+
+.adMain:before {
+    content: '';
+    position: absolute;
+    margin: auto;
+    z-index: -1;
+    right:5px;
+    height: 445px;
+    border: 3px solid #FFBA52FF;
+    width: 397px;
+    background-color: #FDB0C0;
+    align-items: center;
+}
+
 
 .name {
+    position: relative;
     font-weight: 700;
     font-size: 2rem;
     color: rgb(121, 58, 85);
-    left: 30px;
+    text-align: center;
 }
 
 /* Donate button */
-.donate{
-    color: rgb(252, 250, 249);
-    font-weight: 500;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;
-    width: 5%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #FFBA52FF;
-    margin: 10px;
-}
-.donate:hover {
-    background: rgb(121, 58, 85);
-    transition: all 0.3s ease;
+.donatePet {
+    text-align: center;
 }
 
+.petInfo0 {
+    position: relative;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: rgb(121, 58, 85);
+}
+.petInfo1 {
+    font-weight: 700;
+    color: rgb(121, 58, 85);
+}
+
+.petInfo1, .petInfo2 {
+    display: inline-block;
+    
+}
+
+/*
 .square {
     position: absolute;
     height: 365px;
     width: 365px;
     background-color: #FDB0C0;
+    align-items: center;
 }
+*/
 
 /* Individual dog pics */
-.dogPix{
-    position: relative;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    left: 60px;
-}
 
+.dogPix img {
+    position: relative;
+    text-align: center;
+    left: 15px;
+}
 
 /* "Sign In" Page */
 .loginPage {
@@ -380,11 +413,12 @@ code {
 }
 .submitButton{
     text-align:center;
-    margin: 15px;
+    
+
 }
 
 .signup {
-    color: #fff;
+    color: #000;
     font-weight: 500;
     display: flex;
     justify-content: center;
@@ -408,7 +442,7 @@ code {
 
 /* "Sign Up" page */
 .signin {
-    color: #fff;
+    color: #000;
     font-weight: 500;
     display: flex;
     justify-content: center;
@@ -429,10 +463,11 @@ code {
 
 .welcomeText {
     text-align:center;
+    color: #fff;
     font-size: 2rem;
     font-weight: 600;
-    background-color: #FFBA52FF;
-    background-image: linear-gradient(to top, #FFBA52FF 0%, #fff 100%);
+    background-color: #FDB0C0;
+    background-image: linear-gradient(to top, #FDB0C0 0%, #fff 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -442,8 +477,8 @@ code {
 
 .pawfectMatch {
     margin: 10px;
-    text-align:center;
-    background-color: rgb(202, 159, 208);
+    background-color: #B2A4D4;
+    border: 5px solid #FDB0C0;
     padding: 10px;
 }
 
@@ -451,6 +486,36 @@ code {
     font-size: 13px;
     text-align:center;
     color: #fff;
+    font-weight: 500;
+}
+
+.options {
+    margin: 10px;
+    background-image: linear-gradient(to top, #FDB0C0 0%, #fff 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.dropdown {
+    margin: 10px;
+    color:#000;
+    text-align: center;
+}
+
+.select {
+    margin: 10px;
+    color: #fff;
+}
+
+.doggy {
+    position: relative;
+    text-align: center;
+    left: 45px;
 }
 
 /* "Donate" page */
